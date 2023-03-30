@@ -8,11 +8,11 @@
                     <div class="profile-image"><img src="<?php echo get_template_directory_uri().'/assets/imgs/profile-image.png'; ?>" alt=""></div>
                     <div class="profile-details">
                         <h2>Denis Soukharev</h2>
-                        <h4>Desarollador PHP y Wordpress</h4>
+                        <h4>Desarollador Frontend Wordpress</h4>
                         <p><strong> Direccion: </strong> <span>Santander, Cantabria</span></p>
                         <p><strong> E-mail: </strong><span>dsoukh@gmail.com</span></p>
                         <p><strong> Telefono: </strong><span>+34642211040</span></p>
-                        <button class="descargar">Descargar en Pdf</button>
+                        <button class="descargar"> <a href="<?php echo get_site_url().'/wp-content/uploads/2023/03/CV-Denis-Soukharev-1.pdf'; ?>">Descargar en Pdf</a></button>
                     </div>
                   </div>
                   
