@@ -125,6 +125,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
         width: 50%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
@@ -177,7 +178,7 @@ nav {
 section.hero{
    
     height: 80vh;
-    background-image: url(imgs/hero.jpg);
+    background-image: url(imgs/code.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -194,13 +195,20 @@ section.hero div.profile{
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1rem;
   /* border: 4px solid blue; */
  
 }
+
+section.hero div.profile div.profile-details{
+    display: flex;
+    flex-direction: column;
+    
+}
+
 
 section.hero div.profile:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -213,7 +221,7 @@ section.hero div.profile img{
 
 /* Seccion Perfil */
  section.perfil{
-    margin-top: 200px;
+    margin-top: 300px;
   
     
 }
@@ -309,9 +317,11 @@ section.formacion .formacion-caja{
     width: 30%;
     height: 20%;
     border-top: 1px solid black;
+    background-color: black;
+    color: white;
     
     padding: 10px 20px;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 40px;
 }
 
@@ -324,11 +334,7 @@ section.formacion .formacion-caja{
 
 
 
-@media screen and (max-width:1440px) {
-   
-   
 
-}
 @media screen and (max-width:1280px) {
 
     section.hero div.profile{
@@ -358,34 +364,8 @@ section.formacion .formacion-caja{
 
     section.hero div.profile{
 
-        width: calc(100vw-20vw);
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 400px;
-
-    }
-
-    section.comp .competencias-cajas{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section.comp .competencias-caja{
-        width: 100%;
-        height: 20%;
-    
-}
-
-}
-
-@media screen and (max-width:900px) {
-
-    section.hero div.profile{
-
         width: 60vw;
-        height: 80vh;
+        height: 80vw;
         display: flex;
         flex-direction: column;
         margin-bottom: 400px;
@@ -393,9 +373,13 @@ section.formacion .formacion-caja{
     }
 
     section.perfil{
-        margin-top: 400px;
+        margin-top: 300px;
+
     }
 
+    section.perfil .perfil-sumar{
+        width: 100%;
+    }
     section.comp .competencias-cajas{
         display: flex;
         flex-direction: column;
@@ -438,12 +422,85 @@ section.formacion .formacion-cajas{
 }
 
 section.formacion .formacion-caja{
-    width: 90%;
+    width: 100%;
     height: 40%;
     border-top: 1px solid black;
     
     padding: 10px 20px;
+    
+    margin-right: 40px;
+}
+
+}
+
+@media screen and (max-width:900px) {
+
+    section.hero div.profile{
+
+        width: 60vw;
+        height: 70vw;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 400px;
+
+    }
+
+    section.perfil{
+        margin-top: 300px;
+
+    }
+
+    section.perfil .perfil-sumar{
+        width: 100%;
+    }
+    section.comp .competencias-cajas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.comp .competencias-caja{
+        width: 100%;
+        height: 20%;
+    
+}
+
+
+section.experiencia .experiencia-cajas{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+section.experiencia .experiencia-caja{
+    width: 100%;
+    height: 20%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
     margin-top: 40px;
+    margin-right: 40px;
+}
+
+/*Seccion Formacion */
+
+
+
+
+section.formacion .formacion-cajas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+section.formacion .formacion-caja{
+    width: 100%;
+    height: 40%;
+    border-top: 1px solid black;
+    
+    padding: 10px 20px;
+    
     margin-right: 40px;
 }
 

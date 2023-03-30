@@ -5,7 +5,7 @@
             <!-- Hero Section  -->
             <section class="hero">
                   <div class="profile" >
-                    <div class="profile-image"><img src="imgs/profile-image.png" alt=""></div>
+                    <div class="profile-image"><img src="<?php echo get_template_directory_uri().'/assets/imgs/profile-image.png'; ?>" alt=""></div>
                     <div class="profile-details">
                         <h2>Denis Soukharev</h2>
                         <h4>Desarollador PHP y Wordpress</h4>
@@ -33,24 +33,24 @@
                  <h2>Competencias</h2>
                    <div class="competencias-cajas">
                      <div class="competencias-caja">
-                        <img src="imgs/php.png" alt="">
+                        <img src="<?php echo get_template_directory_uri().'/assets/imgs/php.png'; ?>" alt="">
                          <h6>PHP</h6>
                          <p>Desarolle varios proyectos utilizando PHP</p>
                      </div>
                      <div class="competencias-caja">
-                        <img src="imgs/html-5 (1).png" alt="">
-                         <h6>PHP</h6>
-                         <p>Desarolle varios proyectos utilizando PHP</p>
+                        <img src="<?php echo get_template_directory_uri().'/assets/imgs/html-5 (1).png'; ?>" alt="">
+                         <h6>HTML</h6>
+                         <p>Desarolle varios proyectos utilizando HTML</p>
                      </div>
                      <div class="competencias-caja">
-                        <img src="imgs/css-3.png" alt="">
-                         <h6>PHP</h6>
-                         <p>Desarolle varios proyectos utilizando PHP</p>
+                        <img src="<?php echo get_template_directory_uri().'/assets/imgs/css-3.png'; ?>" alt="">
+                         <h6>CSS</h6>
+                         <p>Desarolle varios proyectos utilizando CSS</p>
                      </div>
                      <div class="competencias-caja">
-                        <img src="imgs/wordpress.png" alt="">
-                         <h6>PHP</h6>
-                         <p>Desarolle varios proyectos utilizando PHP</p>
+                        <img src="<?php echo get_template_directory_uri().'/assets/imgs/wordpress.png'; ?>" alt="">
+                         <h6>Wordpress</h6>
+                         <p>Desarolle varios proyectos utilizando Wordpress</p>
                      </div>
                    </div>
                    <!-- Baras de progreso  -->
@@ -60,9 +60,9 @@
                         <div class="progress">
                             <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                        <h6>Javascript</h6>
+                        <h6>XML</h6>
                         <div class="progress">
-                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                     </div>
                     <div class="progreso-right">
@@ -70,9 +70,9 @@
                         <div class="progress">
                             <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
-                        <h6>Yii</h6>
+                        <h6>MySql</h6>
                         <div class="progress">
-                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                           </div>
                     </div>
                    </div>
@@ -146,6 +146,14 @@
             <!-- Contactos -->
 
             <section class="contactos" id="contactos">
+
+            <div class="contacto">
+            <a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+<a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+<a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+
+            </div>
+
 
             </section>
         </main>
