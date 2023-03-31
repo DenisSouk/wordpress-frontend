@@ -80,6 +80,7 @@
 
             </section>
 
+            <?php $experiencia= get_field('experiencia'); ?>
 
               <!-- Experiencia -->
               <section class="experiencia" id="experiencia">
@@ -102,6 +103,12 @@
                             Desarollo de Temas,Plugins personalizados (HTML,CSS,JS,PHP,Api)
                             Maquetacion Web (HTML, CSS , Elementor,PHP)
                             Mantenimiento Web</p>
+                    </div>
+                    <div class="experiencia-caja">
+                         <p><strong> <?php echo $experiencia['fechas'] ?></strong></p>
+                         <p><?php echo $experiencia['puesto'] ?></p>
+                         <p><span><?php echo $experiencia['empresa'] ?></span></p>
+                         <p><?php echo $experiencia['descripcion'] ?></p>
                     </div>
                 </div>
 
@@ -137,6 +144,14 @@
                         <p>The Modern Javascript Bootcamp Course</p>
                         <p><span>Udemy, Online</span></p>
                     </div>
+
+                    <?php if($formacion = get_field('formacion')){ ?>
+                    <div class="formacion-caja">
+                        <p><strong><?php echo $formacion['fechas'] ?></strong></p>
+                        <p><?php echo $formacion['curso'] ?></p>
+                        <p><span><?php echo $formacion['centro'] ?></span></p>
+                    </div>
+                    <?php   }?>
                 </div>
 
 
@@ -148,9 +163,7 @@
             <section class="contactos" id="contactos">
 
             <div class="contacto">
-            <a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
-<a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
-<a href="https://plus.google.com" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+            <?php if ( function_exists('cn_social_icon') ) echo cn_social_icon(); ?>
 
             </div>
 
